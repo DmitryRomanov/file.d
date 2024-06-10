@@ -5,6 +5,7 @@ FROM --platform=$BUILDPLATFORM golang:1.21-alpine AS build
 
 ARG VERSION
 ARG BUILD_TIME
+ARG TARGETARCH
 
 WORKDIR /file.d
 
