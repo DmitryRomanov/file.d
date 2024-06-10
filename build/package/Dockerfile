@@ -16,7 +16,7 @@ COPY . .
 
 ENV CGO_ENABLED 0
 ENV GOOS linux
-ENV GOARCH amd64
+ENV GOARCH ${TARGETARCH:-amd64}
 
 RUN go build -trimpath \
     -pgo default.pgo \
